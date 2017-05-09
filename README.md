@@ -23,3 +23,52 @@ Flow
     - Copy it to the clipboard for Master
     - Ask for Master's permisson to Exit
 ```
+
+Example
+
+```
+Sir, your code slave is at your service. Your Wish is my command.
+
+What would you like automated?
+Type :
+	1     to     Brew a new Promise Chain
+	2     to     Brew a new SQL Query Hit
+	3     to     Brew a new HTTP/HTTPS Call
+	4     to     Brew a new Stub
+	5     to     Brew Boiler Plate
+	6     to     Brew Imports
+	7     to     Brew a new prototype function
+	0     to     Exit
+
+1
+Master please list the functions you need (comma separated and in order) :
+
+v,k
+
+Master please list the parameters (comma separated and in order) and if it returns anything to the next function in queue chain (separated by :) accepted by your function v :
+
+a,b,c
+
+Master please list the parameters (comma separated and in order) and if it returns anything to the next function in queue chain (separated by :) accepted by your function k :
+
+a,b,c
+
+Master your code -
+
+ Q(undefined)
+	.then( () => {
+		return self.v(a, b, c);
+	})
+	.then( (c) => {
+		return self.k(a, b, c);
+	})
+	.fail( (error) => {
+		L.error('error in q chain', error);
+	})
+	.fin( () => {
+
+	});
+
+Everything has been copied to the clipboard for you Master!
+
+```
