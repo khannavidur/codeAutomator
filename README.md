@@ -59,7 +59,7 @@ Master your code -
 	.then( () => {
 		return self.v(a, b, c);
 	})
-	.then( (c) => {
+	.then( () => {
 		return self.k(a, b, c);
 	})
 	.fail( (error) => {
