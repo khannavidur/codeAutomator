@@ -164,7 +164,7 @@ automateMyCode.prototype.askForFunctionParametersForQueueChain = function(cb,out
 
             dataToBeReturned            = answer[answer.length -1].split(':');
             answer[answer.length -1]    = dataToBeReturned[0];
-            dataToBeReturned            = dataToBeReturned[dataToBeReturned.length - 1];
+            dataToBeReturned            = answer.length > 1 ? dataToBeReturned[dataToBeReturned.length - 1] : '';
 
             answer.forEach(function(parameterName){
                 if(parameterName){
